@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taïf Cargo – Fret Aérien Chine · Sénégal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+  </head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="nav-logo-icon"><i class="bi bi-airplane-fill"></i></div>
+    Taïf <span>Cargo</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#infos">Infos</a></li>
+    <li><a href="#adresses">Adresses</a></li>
+    <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
+  </ul>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#infos" onclick="closeMenu()">Infos pratiques</a>
+  <a href="#adresses" onclick="closeMenu()">Adresses</a>
+  <a href="#contact" onclick="closeMenu()">Nous contacter</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-orb"></div>
+  <div class="runway"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow"><span class="dot"></span> Service actif • Départ chaque Mardi</div>
+      <h1>Votre Fret Aérien<br><em>Fiable & Rapide</em><br>Chine · Sénégal</h1>
+      <p class="hero-sub">Taïf Cargo assure l'acheminement de vos marchandises entre Guangzhou et Dakar avec fiabilité, transparence et rapidité. Des départs garantis chaque semaine.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary"><i class="bi bi-box-seam-fill"></i> Demander un devis</a>
+        <a href="#services" class="btn-outline">En savoir plus <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="route-card">
+        <div class="route-flags">
+          <div class="flag-box">
+            <div class="flag">🇨🇳</div>
+            <p>GUANGZHOU</p>
+          </div>
+          <div class="route-arrow">
+            <div class="plane-icon" style="color: rgb(241, 241, 255);"><i class="bi bi-airplane-fill"></i></div>
+            <div class="route-line"></div>
+          </div>
+          <div class="flag-box">
+            <div class="flag">🇸🇳</div>
+            <p>DAKAR</p>
+          </div>
+        </div>
+        <div class="route-stats">
+          <div class="stat-pill">
+            <span class="num">7–10</span>
+            <span class="lbl">Jours de transit</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">Mardi</span>
+            <span class="lbl">Départ hebdomadaire</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">24/7</span>
+            <span class="lbl">Suivi disponible</span>
+          </div>
+          <div class="stat-pill">
+            <span class="num">100%</span>
+            <span class="lbl">Transparent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">DÉFILER<div class="chevron"></div></div>
+</section>
+
+<!-- VALEURS -->
+<section class="values">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Nos engagements</span>
+      <h2 class="section-title">Ce qui nous <span>distingue</span></h2>
+      <p class="section-intro">Taïf Cargo est fondée sur trois piliers essentiels qui guident chaque expédition et garantissent votre satisfaction.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <div class="value-icon"><i class="bi bi-shield-fill-check"></i></div>
+        <h3>Fiabilité</h3>
+        <p>Vos marchandises sont prises en charge avec le plus grand soin. Nous respectons nos engagements à chaque expédition, sans exception.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon"><i class="bi bi-lightning-fill"></i></div>
+        <h3>Rapidité</h3>
+        <p>Grâce à nos liaisons aériennes directes, vos colis arrivent à Dakar en 7 à 10 jours seulement depuis Guangzhou.</p>
+      </div>
+      <div class="value-card reveal">
+        <div class="value-icon"><i class="bi bi-eye-fill"></i></div>
+        <h3>Transparence</h3>
+        <p>Aucune surprise : tarifs clairs, suivi en temps réel et communication ouverte du départ à la livraison.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Ce que nous faisons</span>
+      <h2 class="section-title">Nos <span>services</span></h2>
+      <p class="section-intro">Une entreprise multiservices spécialisée dans le fret aérien et le transit commercial entre la Chine et le Sénégal.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="icon" style="color: white;"><i class="bi bi-airplane-engines-fill"></i></div>
+        <h3>Fret Aérien Chine–Sénégal</h3>
+        <p>Service régulier de fret aérien avec départ garanti chaque mardi depuis Guangzhou. Livraison rapide à Dakar en 7 à 10 jours pour tous types de marchandises.</p>
+        <span class="tag">Départ chaque Mardi</span>
+      </div>
+      <div class="service-card light reveal">
+        <div class="icon"><i class="bi bi-boxes"></i></div>
+        <h3>Groupage de marchandises</h3>
+        <p>Vous n'avez pas un container complet ? Regroupez vos colis avec d'autres expéditeurs pour réduire les coûts tout en bénéficiant des mêmes délais rapides.</p>
+        <span class="tag">Économique</span>
+      </div>
+      <div class="service-card light reveal">
+        <div class="icon"><i class="bi bi-building-fill"></i></div>
+        <h3>Sourcing & Achat en Chine</h3>
+        <p>Notre équipe sur place à Guangzhou vous aide à identifier et acheter vos produits directement auprès des fabricants chinois aux meilleures conditions.</p>
+        <span class="tag">Sur demande</span>
+      </div>
+      <div class="service-card reveal">
+        <div class="icon" style="color: white;"><i class="bi bi-file-earmark-check-fill"></i></div>
+        <h3>Dédouanement & Formalités</h3>
+        <p>Prise en charge complète des formalités douanières à Dakar. Nos agents veillent à la conformité de vos importations pour éviter tout blocage.</p>
+        <span class="tag">Clé en main</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROUTE STRIP -->
+<div class="route-strip">
+  <div class="route-inner">
+    <div class="city-block reveal">
+      <div class="flag">🇨🇳</div>
+      <h3>Guangzhou</h3>
+      <p>Yuexiu District · Yueyang Trade City</p>
+    </div>
+    <div class="route-center reveal">
+      <div class="big-plane" style="color: rgb(241, 241, 255);"><i class="bi bi-airplane-fill"></i></div>
+      <div class="route-badge">7 À 10 JOURS</div>
+    </div>
+    <div class="city-block reveal">
+      <div class="flag">🇸🇳</div>
+      <h3>Dakar</h3>
+      <p>Ouest-Foire · Tally Wally</p>
+    </div>
+  </div>
+</div>
+
+<!-- INFOS PRATIQUES -->
+<section class="info" id="infos">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Informations pratiques</span>
+      <h2 class="section-title">Comment ça <span>fonctionne</span></h2>
+      <p class="section-intro">Tout ce que vous devez savoir pour expédier vos marchandises via Taïf Cargo, simplement et sans stress.</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <div class="num">1 <span class="unit">Mardi/semaine</span></div>
+        <h4>Fréquence des départs</h4>
+        <p>Un vol cargo part chaque mardi depuis Guangzhou. Préparez vos marchandises et déposez-les avant le vendredi précédent.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="num">7–10 <span class="unit">Jours</span></div>
+        <h4>Délai de transit</h4>
+        <p>De la prise en charge à Guangzhou jusqu'à la livraison à Dakar, comptez entre 7 et 10 jours ouvrés selon le volume.</p>
+      </div>
+      <div class="info-card reveal">
+        <div class="num">3<span class="unit">e étage</span></div>
+        <h4>Nos bureaux à Guangzhou</h4>
+        <p>Venez nous remettre vos colis au Yueyang Trade City, 3e étage, emplacements (5388)-310 et 312, Yuexiu District.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADRESSES -->
+<section class="addresses" id="adresses">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Où nous trouver</span>
+      <h2 class="section-title">Nos adresses</h2>
+      <p class="section-intro">Deux bureaux opérationnels — un en Chine, un au Sénégal — pour vous accompagner à chaque bout de la chaîne.</p>
+    </div>
+    <div class="addr-grid">
+      <div class="addr-card reveal">
+        <div class="flag">🇨🇳</div>
+        <h3>Bureau de Guangzhou</h3>
+        <p>No. 2, Huangtianzhi Street, Lujing Road<br>Yuexiu District, Guangzhou<br>3/F B · (5388)-310 + 312<br>Yueyang Trade City</p>
+        <p class="addr-detail">广州市越秀区麓景路田直街2号越洋商贸城3楼(5388)–310+312档</p>
+      </div>
+      <div class="addr-card reveal">
+        <div class="flag">🇸🇳</div>
+        <h3>Bureau de Dakar</h3>
+        <p>Ouest-Foire / Tally Wally<br>Poste Courant<br>Dakar, Sénégal</p>
+        <p class="addr-detail">Retrouvez-nous sur les réseaux sociaux : TAIF CARGO</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Parlons-nous</span>
+      <h2 class="section-title">Contactez <span>Taïf Cargo</span></h2>
+      <p class="section-intro">Une question, un devis ou une commande ? Notre équipe est disponible au Sénégal et en Chine.</p>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <h4>Dakar – Sénégal</h4>
+            <p>Ouest-Foire / Tally Wally, Poste Courant<br>Dakar, Sénégal</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="bi bi-whatsapp"></i></div>
+          <div>
+            <h4>WhatsApp & Téléphone (SENEGAL)</h4>
+            <p>(+221) 78 180 19 28<br>(+221) 77 101 20 86<br>(+221) 78 456 44 78</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <h4>Téléphone (Chine)</h4>
+            <p>(+86) 131 2869 8301</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="bi bi-globe2"></i></div>
+          <div>
+            <h4>Site web</h4>
+            <p>https://taif-cargo.netlify.app</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="bi bi-share-fill"></i></div>
+          <div>
+            <h4>Réseaux sociaux</h4>
+            <p style="color: green"><i class="bi bi-instagram"></i> · <i class="bi bi-facebook"></i> · <i class="bi bi-tiktok"></i> : Taïf Cargo</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3>Demande de devis rapide</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Prénom & Nom</label>
+            <input type="text" placeholder="Amadou Diallo">
+          </div>
+          <div class="form-group">
+            <label>Téléphone / WhatsApp</label>
+            <input type="tel" placeholder="+221 77 000 00 00">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Type de marchandise</label>
+          <select>
+            <option value="">Sélectionner...</option>
+            <option>Vêtements & Textiles</option>
+            <option>Électronique</option>
+            <option>Équipements industriels</option>
+            <option>Cosmétiques</option>
+            <option>Alimentaire</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Poids estimé (kg)</label>
+            <input type="number" placeholder="50">
+          </div>
+          <div class="form-group">
+            <label>Date souhaitée</label>
+            <input type="date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Décrivez votre besoin, origine des marchandises, destination précise..."></textarea>
+        </div>
+        <button class="btn-submit" onclick="sendWhatsApp()"><i class="bi bi-send-fill"></i> Envoyer via WhatsApp</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h2>Taïf <span>Cargo</span></h2>
+      <p>Votre partenaire de confiance pour le fret aérien entre la Chine et le Sénégal. Fiabilité, Rapidité, Transparence.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#infos">Infos pratiques</a></li>
+        <li><a href="#adresses">Adresses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact rapide</h4>
+      <ul>
+        <li><a href="tel:+221781801928">(+221) 78 180 19 28</a></li>
+        <li><a href="tel:+221771012086">(+221) 77 101 20 86</a></li>
+        <li><a href="tel:+8613128698301">(+86) 131 2869 8301</a></li>
+        <li><a href="mailto:taifcargo15@gmail.com" target="_blank">taifcargo15@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Taïf Cargo · Tous droits réservés · Dakar, Sénégal</p>
+    <div class="socials">
+      <a class="social-link" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a class="social-link" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a class="social-link" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      <a class="social-link" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp FAB -->
+<a class="fab" href="https://wa.me/221781801928" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+
+<script>
+ 
+</script>
+</body>
+</html>
